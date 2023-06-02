@@ -1,0 +1,13 @@
+{
+  "name": "chloecorfmat-portfolio",
+  "version": "1.0.0",
+  "description": "Static Chloe Corfmat's portfolio",
+  "scripts": {},
+  "author": "Chloé Corfmat",
+  "license": "MIT",
+  "dependencies": {
+    "@iconscout/unicons": "^4.0.8",
+    "fontawesome-free": "^1.0.4",
+    "sass": "^1.62.1"
+  }
+}

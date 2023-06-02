@@ -1,0 +1,39 @@
+.block {
+  padding: 2rem 1rem;
+  color: $secondary-color;
+
+  &-pattern {
+    background-image: url("../assets/papyrus.png");
+    background-size: 20%;
+    color: $primary-color;
+  }
+
+  &-primary {
+    background: $primary-color;
+    color: $white;
+  }
+
+  &-secondary {
+    background: $secondary-color;
+    color: $white;
+  }
+
+  &-tertiary {
+    background: $tertiary-color;
+    color: $secondary-color;
+  }
+
+  &-content {
+    padding: 2rem 1rem;
+    border-radius: $border-radius;
+    background: $white;
+  }
+
+  @include media-breakpoint-up(lg) {
+    padding: 10rem 15rem;
+
+    .block-content {
+      padding: 3rem 5rem;
+    }
+  }
+}

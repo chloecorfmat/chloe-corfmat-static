@@ -1,0 +1,37 @@
+.block-quote {
+  padding-bottom: 0;
+  padding-top: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+
+  @include media-breakpoint-up(xl) {
+    flex-direction: row;
+    gap: 8rem;
+
+    .block-quote-content {
+      margin-top: 0;
+    }
+  }
+
+  &-content {
+    flex-grow: 1;
+    font-style: italic;
+    line-height: 1.5;
+    margin-top: 3rem;
+
+    &:before {
+      content : open-quote
+    }
+
+    &:after{
+      content : close-quote
+    }
+  }
+
+  &-image {
+    padding-top: 2rem;
+    width: 200px;
+  }
+}

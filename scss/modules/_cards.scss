@@ -1,0 +1,75 @@
+.cards {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 0;
+
+  &-item {
+    list-style-type: none;
+    border: 1px solid $white;
+    padding: 1rem 1rem;
+    flex: 1 1 0px;
+
+    > .uil {
+      font-size: 2rem;
+      text-align: center;
+      margin: auto;
+      display: block;
+    }
+
+    &-list {
+      list-style-type: disc;
+      list-style-position: inside;
+      padding: 0;
+    }
+
+    &-icons {
+      list-style-type: none;
+      display: flex;
+      flex-direction: row;
+      gap: 1rem;
+      justify-content: center;
+      font-size: .9rem;
+      text-align: center;
+      align-items: flex-end;
+      height: 60px;
+
+      .uil {
+        font-size: 1.5rem;
+      }
+
+      .fab {
+        font-size: 1.2rem;
+      }
+
+      li {
+        max-width: 33%;
+      }
+    }
+  }
+
+  &-secondary {
+    .cards-item {
+      border-color: $secondary-color;
+    }
+  }
+
+  &-white {
+    .cards-item {
+      border-color: $secondary-color;
+    }
+  }
+
+  h3 {
+    text-align: center;
+  }
+
+  @include media-breakpoint-up(lg) {
+    flex-direction: row;
+    justify-content: space-between;
+
+    h3 {
+      text-align: left;
+    }
+  }
+}

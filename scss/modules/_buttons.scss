@@ -1,0 +1,62 @@
+.btn {
+  padding: .5rem 1rem;
+  border: 2px solid $primary-color;
+  border-radius: $border-radius;
+  background: $primary-color;
+  color: $white;
+  font-family: $main-font;
+  text-decoration: none;
+  cursor: pointer;
+
+  &--secondary {
+    border-color: $secondary-color;
+    background: $secondary-color;
+  }
+
+  &:hover {
+    background-color: $tertiary-color;
+    color: $secondary-color;
+    border-color: $tertiary-color;
+  }
+
+  &--big {
+    padding: .75rem 1.5rem;
+  }
+
+  &--reverse {
+    background: $white;
+    color: $primary-color;
+
+    &.btn--secondary {
+      color: $secondary-color;
+    }
+
+    &:hover {
+      background-color: $tertiary-color;
+      color: $secondary-color;
+      border-color: $tertiary-color;
+    }
+  }
+
+  &--cta {
+    display: inline-block;
+    margin: 3rem 0;
+
+    &-container {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+    }
+  }
+}
+
+.btns-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+  @include media-breakpoint-up(xl) {
+    flex-direction: row;
+    justify-content: center;
+  }
+}
